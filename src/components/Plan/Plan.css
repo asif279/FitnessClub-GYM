@@ -1,0 +1,68 @@
+.hi{
+   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+ 
+}
+.plan-blur-1{
+    width: 512px;
+    height: 352px;
+    top: 96px;
+    left: 0;
+
+}
+.plan-blur-2{
+    width: 512px;
+    height: 352px;
+    top: 160px;
+    right: 0;
+
+}
+.hi h1{
+    font-size: 50px;
+    padding: 10px;
+}
+.plan-container{
+    margin-top: -64px;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+}
+.plans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--caloryCard);
+    color: white;
+    gap: 32px;
+    padding: 24px;
+    width: 240px;
+}
+.plan:nth-child(2){
+    background-color:  orangered;
+    transform: scale(1.1);
+}
+.price{
+    font-size: 45px;
+    font-weight: 900;
+}
+.plan>svg{
+    fill:black;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.feature>img{
+    width: 16px;
+}

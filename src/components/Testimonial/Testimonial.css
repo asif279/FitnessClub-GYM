@@ -1,0 +1,76 @@
+.left-t{
+    display: flex;
+    flex: 1 1;
+    gap: 32px;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+.Testimonial{
+    display: flex;
+    gap: 16px;
+    padding: 0 32px;
+}
+.left-t h1{
+    font-size: 45px;
+}
+.say{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    fill: white;
+}
+.testi{
+    color: orange;
+}
+.left-t>:nth-child(4){
+    text-transform: none;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: justify;
+}
+.right-t{
+    flex: 1;
+    position: relative;
+}
+.right-t>img{
+    position: absolute;
+    width: 269px;
+    height: 320px;
+    object-fit: cover;
+    right: 128px;
+    top: 32px;
+
+}
+.right-t>:nth-child(1){
+    position: absolute;
+    width: 269px;
+    height: 320px;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 144px;
+    bottom: 40px;
+
+}
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 269px;
+    height: 300px;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 102px;
+   top: 64px;
+   background: var(--planCard);
+
+}
+.arrows{
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    bottom: 16px;
+   left: 16px;
+}
+.arrows>img{
+    width: 24px;
+    cursor: pointer;
+}

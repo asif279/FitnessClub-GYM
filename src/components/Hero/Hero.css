@@ -1,0 +1,240 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+
+}
+.leftH{
+    padding: 32px;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+.rightH{
+    flex: 1;
+    position: relative;
+    background-color: orange;
+}
+.rightH>.btn{
+    position: absolute;
+    right: 48px;
+    top: 32px;
+    color: black;
+}
+.heart-name{
+   display: flex;
+   flex-direction:column;
+   gap: 16px;
+   background-color: darkgray;
+   width: fit-content;
+   padding: 20px;
+   align-items: flex-start;
+   border-radius: 5px;
+   position: absolute;
+   right: 64px;
+   top: 112px;
+
+}
+.heart-name>:nth-child(2){
+    color: gray;
+
+}
+.heart-name>:nth-child(3){
+    color: white;
+    font-size: 24px;
+
+}
+.heart-name>img{
+    width: 32px;
+
+
+
+}
+
+.hero-image{
+    position: absolute;
+    top: 160px;
+    right: 128px;
+    width: 368px;
+}
+.hero-img-black{
+    position: absolute;
+    top: 64px;
+    right: 240px;
+    z-index: -1;
+    width: 320px;
+}
+.calories{
+    display: flex;
+    gap: 32px;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 16px;
+    width: fit-content;
+    position: absolute;
+    top: 512px;
+    right:550px;
+}
+.calories>img{
+    width: 48px;
+}
+.calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.calories>div>:nth-child(1){
+    color: gray;
+}
+.calories>div>:nth-child(2){
+    color: white;
+    font-size: 24px;
+}
+.best-ad{
+    margin-top: 64px;
+    background-color: #363d42;
+    border-radius: 64px;
+    width: 41%;
+    padding: 18px 8px;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+}
+.best-ad span{
+    z-index: 2;
+}
+.best-ad div{
+    z-index: 1;
+    position: absolute;
+    background-color: orange;
+    width: 86.4px;
+    height: 80%;
+    left: 8px;
+    border-radius: 48px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+.hero-text div:nth-of-type(3){
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+.figures{
+    display: flex;
+    gap: 32px;
+}
+.figures div{
+    display: flex;
+    flex-direction: column;
+}
+.figures div span:nth-of-type(1){
+    color: white;
+    font-size: 32px;
+}
+.figures div span:nth-of-type(2){
+    color: gray;
+    text-transform: uppercase;
+}
+.hero-btn{
+    display: flex;
+    gap: 16px;
+    font-weight: normal;
+}
+.hero-btn>:nth-child(1){
+    color: white;
+    background-color: orange;
+    width: 128px;
+}
+.hero-btn>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 128px;
+    border: 2px solid orange;
+}
+
+.hero-blur{
+    width: 352px;
+    height: 480px;
+    left: 0;
+}
+@media screen and (max-width:768px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero-blur{
+        width: 210px;
+    }
+    .best-ad{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);;
+    }
+    .hero-text{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text div:nth-of-type(3){
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .hero-btn{
+        justify-content: center;
+    }
+    .figures>div>span:nth-of-type(1){
+        font-size: large;
+    }
+    .figures>div>span:nth-of-type(2){
+        font-size: small;
+    }
+    .rightH{
+        position: relative;
+        background: none;
+    }
+    .heart-name{
+        left: 1rem;
+        top: 2rem;
+    }
+    .calories{
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+    .calories>img{
+        width: 2rem;
+    }
+    .calories>div>:nth-child(2){
+        color: white;
+        font-size: 1rem;
+    }
+    .hero-image{
+        position: relative;
+        width: 15rem;
+        left: 7rem;
+        top: 4rem;
+        align-self: center;
+    }
+    .hero-img-black{
+        width: 15rem;
+        left: 2rem;
+        top: 0rem;
+    }
+
+}

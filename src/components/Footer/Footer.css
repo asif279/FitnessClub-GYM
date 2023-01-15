@@ -1,0 +1,36 @@
+.Footer-container{
+    position: relative;
+}
+.Footer-container>hr{
+    border: 1px solid white;
+}
+.footer{
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+.social-l{
+    display: flex;
+    gap: 64px;
+
+}
+.social-l>img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.logo-f>img{
+    width: 160px;
+}
+.blur-f-1{
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    background: red;
+}
